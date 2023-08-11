@@ -10,7 +10,7 @@ if ! check_command jq; then
 fi
 
 OS_NAME=$(echo "$RUNNER_OS" | awk '{print tolower($0)}')
-MANIFEST_BASE_URL="https://storage.googleapis.com/flutter_infra_release/releases"
+MANIFEST_BASE_URL="https://storage.flutter-io.cn/flutter_infra_release/releases"
 MANIFEST_JSON_PATH="releases_$OS_NAME.json"
 MANIFEST_URL="$MANIFEST_BASE_URL/$MANIFEST_JSON_PATH"
 
